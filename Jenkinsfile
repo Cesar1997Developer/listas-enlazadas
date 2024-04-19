@@ -6,12 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout the code from the Git repository
-                git 'https://github.com/Cesar1997Developer/listas-enlazadas'
-            }
-        }
 
         stage('Build') {
             steps {
