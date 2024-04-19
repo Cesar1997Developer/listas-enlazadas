@@ -5,6 +5,10 @@ pipeline {
         SONARQUBE_TOKEN = credentials('sonarqube')
     }
 
+    tools {
+        maven 'M3'
+     }
+
     stages {
 
         stage('Build') {
